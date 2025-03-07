@@ -1,8 +1,8 @@
 # main.py
 
 from fastapi import FastAPI
-from api_sk.core.config import settings
-from api_sk.core.routers import api_router
+from {{cookiecutter.project_slug}}.core.config import settings
+from {{cookiecutter.project_slug}}.core.routers import api_router
 import argparse
 import uvicorn
 

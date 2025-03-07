@@ -1,16 +1,14 @@
 # config.py
 
-from api_sk.data.fake_db import users_db
+from {{cookiecutter.project_slug}}.data.fake_db import users_db
 
 # Setting for the API
 
 
 class Settings:
-    PROJECT_NAME: str = "Skeletor: a barebones API using FastAPI"
-    DESCRIPTION: str = (
-        "This is a basic API with standard funcionalities that will serve as a starting point to build a full API for a project."
-    )
-    CONTACT: dict[str] = {"name": "M. Herrero", "e-mail": "mherrero@bsc.es"}
+    PROJECT_NAME: str = {{ cookiecutter.project_name }}
+    DESCRIPTION: str = {{cookiecutter.project_description}}
+    CONTACT: dict[str] = {"name": {{cookiecutter.author}}, "e-mail": {{cookiecutter.email}}}
     PROJECT_VERSION: str = "1.0"
     USERS_DB = users_db
 

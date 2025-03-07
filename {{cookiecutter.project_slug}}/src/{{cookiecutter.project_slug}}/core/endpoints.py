@@ -1,12 +1,12 @@
 # endpoints.py
 from typing import Annotated
 from fastapi import Depends, APIRouter
-from api_sk.auth.auth import check_token
+from {{cookiecutter.project_slug}}.auth.auth import check_token
 import logging
 import uuid
 import datetime
 import asyncio
-from api_sk.schemas import schemas
+from {{cookiecutter.project_slug}}.schemas import schemas
 
 router = APIRouter()
 logger = logging.getLogger("uvicorn.error")  # Logger for logging info

@@ -7,10 +7,10 @@ from fastapi.security import (
     OAuth2PasswordBearer,
     SecurityScopes,
 )
-from api_sk.auth.hashing import Hasher
-from api_sk.schemas.user_schema import UserInDB
-from api_sk.schemas.token_schema import Token, TokenData
-from api_sk.core.config import settings
+from {{cookiecutter.project_slug}}.auth.hashing import Hasher
+from {{cookiecutter.project_slug}}.schemas.user_schema import UserInDB
+from {{cookiecutter.project_slug}}.schemas.token_schema import Token, TokenData
+from {{cookiecutter.project_slug}}.core.config import settings
 import jwt
 
 

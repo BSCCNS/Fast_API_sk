@@ -1,10 +1,10 @@
 # routers.py
 
 from fastapi import APIRouter, Security
-from api_sk.auth import auth
-from api_sk.core import endpoints
-from api_sk.user import superuser_endpoints
-from api_sk.auth.auth import check_superuser
+from {{cookiecutter.project_slug}}.auth import auth
+from {{cookiecutter.project_slug}}.core import endpoints
+from {{cookiecutter.project_slug}}.user import superuser_endpoints
+from {{cookiecutter.project_slug}}.auth.auth import check_superuser
 
 # We define a router that collects everything together
 api_router = APIRouter()

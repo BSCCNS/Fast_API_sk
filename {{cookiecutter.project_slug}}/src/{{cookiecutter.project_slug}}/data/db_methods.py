@@ -1,6 +1,6 @@
 # db_methods.py
 
-from api_sk.core.config import settings
+from {{cookiecutter.project_slug}}.core.config import settings
 import json
 
 

@@ -1,7 +1,7 @@
 # user_endpoints.py
 
 from fastapi import APIRouter, HTTPException, status
-from api_sk.core.config import settings
+from {{cookiecutter.project_slug}}.core.config import settings
 from fastapi.responses import JSONResponse
 
 router = APIRouter()
